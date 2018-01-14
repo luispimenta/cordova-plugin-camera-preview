@@ -641,7 +641,18 @@
 }
 
 - (void) invokeTakePicture:(CGFloat) width withHeight:(CGFloat) height withQuality:(CGFloat) quality{
+
     AVCaptureConnection *connection = [self.sessionManager.stillImageOutput connectionWithMediaType:AVMediaTypeVideo];
+    
+    // disabled the sound
+    static SystemSoundID soundID = 0;
+    if (soundID == 0) {
+        NSURL* filePath = [[NSBundle mainBundle] URLForResource:@"CameraPreview.bundle/photoShutter2" withExtension:@"caf"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)filePath, &soundID);
+    }
+    AudioServicesPlaySystemSound(soundID);
+    ///////
+
     [self.sessionManager.stillImageOutput captureStillImageAsynchronouslyFromConnection:connection completionHandler:^(CMSampleBufferRef sampleBuffer, NSError *error) {
 
       NSLog(@"Done creating still image");

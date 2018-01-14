@@ -52,6 +52,7 @@
 
     <header-file src="src/ios/CameraPreview.h" />
     <source-file src="src/ios/CameraPreview.m" />
+    <resource-file src="src/ios/CameraPreview.bundle" />
 
      <header-file src="src/ios/TemperatureAndTint.h" />
     <source-file src="src/ios/TemperatureAndTint.m" />

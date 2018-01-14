@@ -1,7 +1,41 @@
 {
-  "name": "cordova-plugin-camera-preview",
-  "version": "0.9.0",
+  "_from": "git+https://github.com/luispimenta/cordova-plugin-camera-preview.git",
+  "_id": "cordova-plugin-camera-preview@0.9.0",
+  "_inBundle": false,
+  "_integrity": "sha1-n644iCtLF7iBNTXZutcSbzfSb+E=",
+  "_location": "/cordova-plugin-camera-preview",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/luispimenta/cordova-plugin-camera-preview.git",
+    "rawSpec": "https://github.com/luispimenta/cordova-plugin-camera-preview.git",
+    "saveSpec": "git+https://github.com/luispimenta/cordova-plugin-camera-preview.git",
+    "fetchSpec": "https://github.com/luispimenta/cordova-plugin-camera-preview.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/luispimenta/cordova-plugin-camera-preview.git#5efd7914e33859b1b903acb9805504120268da53",
+  "_spec": "https://github.com/luispimenta/cordova-plugin-camera-preview.git",
+  "_where": "/Users/pimenta/projetos/faceCaptcha/cordova/sample",
+  "author": {
+    "name": "Weston Ganger",
+    "email": "westonganger@gmail.com",
+    "url": "solidfoundationwebdev.com"
+  },
+  "bugs": {
+    "url": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cordova": "*"
+  },
+  "deprecated": false,
   "description": "Cordova plugin that allows camera interaction from HTML code for showing camera preview below or on top of the HTML.",
+  "devDependencies": {},
+  "homepage": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview",
   "keywords": [
     "cordova",
     "phonegap",
@@ -16,20 +50,12 @@
     "camera-preview",
     "preview"
   ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-camera-preview",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview"
+    "url": "git+https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git"
   },
-  "author": {
-    "name": "Weston Ganger",
-    "email": "westonganger@gmail.com",
-    "url": "solidfoundationwebdev.com"
-  },
-  "license": "Apache 2.0",
-  "homepage": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview",
   "typings": "typescript/CameraPreview.d.ts",
-  "dependencies": {
-    "cordova": "*"
-  },
-  "devDependencies": {}
+  "version": "0.9.0"
 }
