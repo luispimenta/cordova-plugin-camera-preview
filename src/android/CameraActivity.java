@@ -417,7 +417,8 @@ public class CameraActivity extends Fragment {
         if (!matrix.isIdentity()) {
           Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
           bitmap = applyMatrix(bitmap, matrix);
-
+          bitmap = Bitmap.createScaledBitmap(bitmap, 320, 480, false);
+          
           ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
           bitmap.compress(Bitmap.CompressFormat.JPEG, currentQuality, outputStream);
           data = outputStream.toByteArray();
@@ -526,8 +527,8 @@ public class CameraActivity extends Fragment {
         public void run() {
           Camera.Parameters params = mCamera.getParameters();
 
-          Camera.Size size = getOptimalPictureSize(width, height, params.getPreviewSize(), params.getSupportedPictureSizes());
-          params.setPictureSize(size.width, size.height);
+          //Camera.Size size = getOptimalPictureSize(width, height, params.getPreviewSize(), params.getSupportedPictureSizes());
+          params.setPictureSize(width, height);
           currentQuality = quality;
 
           if(cameraCurrentlyLocked == Camera.CameraInfo.CAMERA_FACING_FRONT) {
